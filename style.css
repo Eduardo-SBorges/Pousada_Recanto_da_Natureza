@@ -166,6 +166,23 @@ nav a {
     animation: aparecer 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.img-header-secundaria img {
+    display: none;
+    width: 100%;
+    -webkit-animation: aparecer 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: aparecer 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media screen and (max-width:480px){
+    .img-header img {
+        animation: none;
+        display: none;
+    }
+    .img-header-secundaria img {
+        display: block;
+    }
+} 
+
 @-webkit-keyframes aparecer {
     0% {
         -webkit-transform: scale(0);
